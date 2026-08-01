@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "ResumeAI - Professional AI Resume Builder";
+export const alt = "CampusCV - Professional AI Resume Builder";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ fontSize: 84, fontWeight: 800, letterSpacing: -2 }}>
-          ResumeAI
+          CampusCV
         </div>
         <div style={{ marginTop: 20, fontSize: 36, opacity: 0.9 }}>
           Build your resume with AI

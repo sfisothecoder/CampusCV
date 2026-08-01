@@ -19,7 +19,7 @@ export async function generateMetadata({
 
   if (resume?.firstName === undefined && resume?.lastName === undefined) {
     return {
-      title: "ResumeAI - Professional AI Resume Builder",
+      title: "CampusCV - Professional AI Resume Builder",
       description:
         "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
     };
@@ -27,8 +27,8 @@ export async function generateMetadata({
 
   const fullName =
     `${resume?.firstName ?? ""} ${resume?.lastName ?? ""}`.trim() || "User";
-  const title = `${fullName} - ResumeAI`;
-  const description = `${fullName}'s Resume. Powered by ResumeAI.`;
+  const title = `${fullName} - CampusCV`;
+  const description = `${fullName}'s Resume. Powered by CampusCV.`;
   const url = `/resume/${id}`;
 
   return {
@@ -41,7 +41,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "ResumeAI",
+      siteName: "CampusCV",
       type: "profile",
     },
     twitter: {

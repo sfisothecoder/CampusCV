@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <img src="https://i.postimg.cc/xnTr6TCb/ResumeAI.png" alt="Project Banner">
+    <img src="https://i.postimg.cc/xnTr6TCb/CampusCV.png" alt="Project Banner">
   <br />
   <br />
 
@@ -13,13 +13,13 @@
     <img src="https://img.shields.io/badge/-Framer_Motion-black?style=for-the-badge&logoColor=white&logo=framer&color=E649A2" alt="framer motion" />
   </div>
 
-  <h2 align="center">ResumeAI</h2>
+  <h2 align="center">CampusCV</h2>
 
   <div align="center">
-     <b>ResumeAI</b> is designed to make resume creation effortless. With the help of AI, users can generate, update, and customize their resumes, ensuring they stand out to potential employers. The application is secure, user-friendly, and highly customizable.
+     <b>CampusCV</b> is designed to make resume creation effortless. With the help of AI, users can generate, update, and customize their resumes, ensuring they stand out to potential employers. The application is secure, user-friendly, and highly customizable.
   </div>
   <br />
-  <a href="https://resume-ai-app.vercel.app/"><strong>➥ Visit ResumeAI App</strong></a>
+  <a href="https://campuscv-app.vercel.app/"><strong>➥ Visit CampusCV App</strong></a>
 </div>
 
 ## <a name="features">✨ Features</a>
@@ -108,8 +108,8 @@ Make sure you have the following installed on your machine:
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/Mahmud0808/ResumeAI.git
-cd ResumeAI
+git clone https://github.com/Mahmud0808/CampusCV.git
+cd CampusCV
 ```
 
 ### Installation
@@ -142,11 +142,11 @@ GEMINI_API_KEY=
 #   Gmail : smtp.gmail.com : 587  (SMTP_PASS = a Google App Password)
 #   Brevo : smtp-relay.brevo.com : 587
 # If left blank, emails are skipped and the link is logged to the server console.
-SMTP_HOST=
+SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=
-SMTP_PASS=
-SMTP_FROM=ResumeAI <resumeai.mailer@gmail.com>
+SMTP_USER=campuscvai@gmail.com
+SMTP_PASS=wlmt tteh qgsf heiw
+SMTP_FROM=CampusCV <campuscvai@gmail.com>
 
 BASE_URL=localhost:3000
 ```

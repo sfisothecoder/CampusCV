@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://resume-ai-app.vercel.app"),
-  title: "ResumeAI - Professional AI Resume Builder",
+  metadataBase: new URL("https://campuscv-app.vercel.app"),
+  title: "CampusCV - Professional AI Resume Builder",
   description:
     "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
   keywords: [
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     icon: "/icons/favicon.ico",
   },
   openGraph: {
-    title: "ResumeAI - Professional AI Resume Builder",
+    title: "CampusCV - Professional AI Resume Builder",
     description:
       "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
-    url: "https://resume-ai-app.vercel.app",
-    siteName: "ResumeAI",
+    url: "https://campuscv-app.vercel.app",
+    siteName: "CampusCV",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ResumeAI - Professional AI Resume Builder",
+    title: "CampusCV - Professional AI Resume Builder",
     description:
       "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
   },

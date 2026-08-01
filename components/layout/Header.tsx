@@ -34,13 +34,13 @@ const Header = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 18 }}
                 src="/icons/logo.svg"
                 className="relative h-7 sm:h-8"
-                alt="logo"
+                alt="CampusCV logo"
               />
             </span>
             <span className="self-center text-lg font-extrabold tracking-tight whitespace-nowrap sm:text-xl">
-              <span className="text-slate-900">Resume</span>
+              <span className="text-slate-900">Campus</span>
               <span className="bg-gradient-to-r from-primary-600 to-sky-500 bg-clip-text text-transparent">
-                AI
+                CV
               </span>
             </span>
           </Link>

@@ -10,13 +10,13 @@ import nodemailer, { type Transporter } from "nodemailer";
  *   SMTP_PORT  - 587 (STARTTLS, default) or 465 (implicit TLS)
  *   SMTP_USER  - SMTP username (the dedicated mailbox / API login)
  *   SMTP_PASS  - SMTP password / app password / API key
- *   SMTP_FROM  - "ResumeAI <resumeai.mailer@gmail.com>" shown to recipients
+ *   SMTP_FROM  - "CampusCV <campuscv.mailer@gmail.com>" shown to recipients
  *
  * If SMTP is not configured, sends are skipped and the link is logged so local
  * verification/reset still works without crashing the request.
  */
 
-const FROM = process.env.SMTP_FROM ?? "ResumeAI <no-reply@example.com>";
+const FROM = process.env.SMTP_FROM ?? "CampusCV <no-reply@example.com>";
 
 let transporter: Transporter | null = null;
 
@@ -66,7 +66,7 @@ async function send(to: string, subject: string, html: string) {
 function layout(title: string, body: string, cta: { href: string; label: string }) {
   return `
   <div style="font-family:Inter,Arial,sans-serif;max-width:480px;margin:0 auto;padding:24px;color:#0f172a">
-    <h1 style="font-size:20px;font-weight:800">ResumeAI</h1>
+    <h1 style="font-size:20px;font-weight:800">CampusCV</h1>
     <h2 style="font-size:16px;margin-top:24px">${title}</h2>
     <p style="font-size:14px;color:#475569;line-height:1.6">${body}</p>
     <a href="${cta.href}" style="display:inline-block;margin-top:16px;padding:10px 20px;background:#1d4ed8;color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;font-size:14px">${cta.label}</a>
@@ -79,7 +79,7 @@ export async function sendVerificationEmail(to: string, token: string) {
   const href = `${getAppUrl()}/verify-email?token=${encodeURIComponent(token)}`;
   await send(
     to,
-    "Verify your ResumeAI email",
+    "Verify your CampusCV email",
     layout(
       "Confirm your email",
       "Click the button below to verify your email address and activate your account. This link expires in 24 hours.",
@@ -92,7 +92,7 @@ export async function sendPasswordResetEmail(to: string, token: string) {
   const href = `${getAppUrl()}/reset-password?token=${encodeURIComponent(token)}`;
   await send(
     to,
-    "Reset your ResumeAI password",
+    "Reset your CampusCV password",
     layout(
       "Reset your password",
       "Click the button below to choose a new password. This link expires in 1 hour. If you didn't ask to reset your password, ignore this email.",

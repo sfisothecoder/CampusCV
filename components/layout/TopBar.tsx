@@ -16,9 +16,14 @@ const TopBar = () => {
   return (
     <div className="flex w-full justify-between items-center py-3 px-5 shadow-md">
       <Link href="/" className="flex gap-2 items-center">
-        <Image src="/icons/logo.svg" alt="logo" width={58} height={58} />
+        <Image
+          src="/img/campus_cv_logo.png"
+          alt="CampusCV logo"
+          width={58}
+          height={58}
+        />
         <p className="text-4xl font-nunito font-extrabold text-slate-800">
-          ResumeAI
+          CampusCV
         </p>
       </Link>
 

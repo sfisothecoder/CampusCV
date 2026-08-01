@@ -224,13 +224,13 @@ const page = () => {
           <span className="text-sm text-slate-500">
             © 2024{" "}
             <span className="font-medium text-slate-700 transition-colors hover:cursor-pointer hover:text-primary-600">
-              ResumeAI™
+              CampusCV™
             </span>
             . All Rights Reserved.
           </span>
           <Link href="https://github.com/Mahmud0808" className="md:me-2">
             <span className="text-sm font-medium text-slate-500 transition-colors hover:text-primary-600">
-              Made with ❤️ by Mahmud
+              Made with ❤️ by Sfiso
             </span>
           </Link>
         </div>

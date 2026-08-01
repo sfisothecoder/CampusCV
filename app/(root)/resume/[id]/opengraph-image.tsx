@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { fetchResume } from "@/lib/actions/resume.actions";
 
 // Node runtime (not edge): fetchResume uses mongoose, which is not edge-safe.
-export const alt = "Resume on ResumeAI";
+export const alt = "Resume on CampusCV";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -46,7 +46,7 @@ export default async function OpengraphImage({
           }}
         >
           <div style={{ fontSize: 84, fontWeight: 800, letterSpacing: -2 }}>
-            ResumeAI
+            CampusCV
           </div>
           <div style={{ marginTop: 20, fontSize: 36, opacity: 0.9 }}>
             Build your resume with AI
@@ -124,7 +124,7 @@ export default async function OpengraphImage({
               background: accent,
             }}
           />
-          ResumeAI
+          CampusCV
         </div>
       </div>
     ),

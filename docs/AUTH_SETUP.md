@@ -1,6 +1,6 @@
 # Auth & environment setup
 
-ResumeAI uses **NextAuth (Auth.js v5)** with **Google OAuth** and **email +
+CampusCV uses **NextAuth (Auth.js v5)** with **Google OAuth** and **email +
 password** (bcrypt), backed by MongoDB. Login is brute-force rate-limited
 (5 attempts / 15 min per email+IP) and AI generation is rate-limited
 (30 / hour per user) — both stored in Mongo, no extra infrastructure.
@@ -24,14 +24,14 @@ redirect URIs**:
 
 ```
 http://localhost:3000/api/auth/callback/google
-https://resume-ai-app.vercel.app/api/auth/callback/google
+https://campuscv-app.vercel.app/api/auth/callback/google
 ```
 
 ### Vercel
 
 Add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, `MONGODB_URL`,
 `GEMINI_API_KEY` to the project's Environment Variables. NextAuth auto-detects
-the deployment URL; set `AUTH_URL=https://resume-ai-app.vercel.app` only if
+the deployment URL; set `AUTH_URL=https://campuscv-app.vercel.app` only if
 callbacks misbehave behind a proxy.
 
 ## MongoDB connection note

@@ -76,9 +76,13 @@ const SignInPage = () => {
         className="w-full max-w-md rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-xl sm:p-8"
       >
         <Link href="/" className="mb-6 flex items-center gap-2">
-          <img src="/icons/logo.svg" className="h-8" alt="logo" />
+          <img
+            src="/img/campus_cv_logo.png"
+            className="h-8"
+            alt="CampusCV logo"
+          />
           <span className="text-lg font-bold tracking-tight text-slate-900">
-            ResumeAI
+            CampusCV
           </span>
         </Link>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">

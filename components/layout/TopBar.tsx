@@ -26,7 +26,17 @@ const TopBar = () => {
         <p className="text-4xl font-nunito font-extrabold text-slate-800">
           CampusCV
         </p>
-          <BetaBadge />
+        <BetaBadge />
+      </Link>
+
+      {isSignedIn ? (
+        <div className="flex gap-3 items-center">
+          <Button
+            variant="outline"
+            onClick={() => {
+              router.push("/dashboard");
+            }}
+          >
             Dashboard
           </Button>
           <UserMenu showName={false} />

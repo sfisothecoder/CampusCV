@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { useRouter } from "next-nprogress-bar";
 import { useSession } from "next-auth/react";
+import BetaBadge from "@/components/common/BetaBadge";
 import UserMenu from "@/components/common/UserMenu";
 
 const TopBar = () => {
@@ -25,16 +26,7 @@ const TopBar = () => {
         <p className="text-4xl font-nunito font-extrabold text-slate-800">
           CampusCV
         </p>
-      </Link>
-
-      {isSignedIn ? (
-        <div className="flex gap-3 items-center">
-          <Button
-            variant="outline"
-            onClick={() => {
-              router.push("/dashboard");
-            }}
-          >
+          <BetaBadge />
             Dashboard
           </Button>
           <UserMenu showName={false} />

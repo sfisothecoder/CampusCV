@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/layout/Header";
+import BetaBadge from "@/components/common/BetaBadge";
 import { useSession } from "next-auth/react";
 import {
   ArrowRight,
@@ -68,6 +69,12 @@ const page = () => {
               <Sparkles className="h-4 w-4" />
               AI-Powered Resume Builder
             </span>
+          </StaggerItem>
+
+          <StaggerItem>
+            <div className="flex justify-center">
+              <BetaBadge />
+            </div>
           </StaggerItem>
 
           <StaggerItem>

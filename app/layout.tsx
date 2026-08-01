@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://campuscv-app.vercel.app"),
+  metadataBase: new URL("https://campuscvai.netlify.app"),
   title: "CampusCV - Professional AI Resume Builder",
   description:
     "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "CampusCV - Professional AI Resume Builder",
     description:
       "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
-    url: "https://campuscv-app.vercel.app",
+    url: "https://campuscvai.netlify.app",
     siteName: "CampusCV",
     type: "website",
   },

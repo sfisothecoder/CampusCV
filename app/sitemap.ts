@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://campuscv-app.vercel.app";
+const BASE_URL = "https://campuscvai.netlify.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -40,6 +40,7 @@ export function getAppUrl(): string {
   const fromEnv =
     process.env.AUTH_URL ??
     process.env.NEXTAUTH_URL ??
+    process.env.URL ??
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
   return (fromEnv ?? "http://localhost:3000").replace(/\/$/, "");
 }

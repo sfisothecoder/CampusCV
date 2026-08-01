@@ -2,6 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import UserMenu from "@/components/common/UserMenu";
+import BetaBadge from "@/components/common/BetaBadge";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -43,6 +44,7 @@ const Header = () => {
                 CV
               </span>
             </span>
+            <BetaBadge />
           </Link>
 
           <div className="flex items-center gap-1 sm:gap-2 lg:order-2">

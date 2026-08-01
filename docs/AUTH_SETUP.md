@@ -24,15 +24,15 @@ redirect URIs**:
 
 ```
 http://localhost:3000/api/auth/callback/google
-https://campuscv-app.vercel.app/api/auth/callback/google
+https://campuscvai.netlify.app/api/auth/callback/google
 ```
 
-### Vercel
+### Netlify
 
 Add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, `MONGODB_URL`,
 `GEMINI_API_KEY` to the project's Environment Variables. NextAuth auto-detects
-the deployment URL; set `AUTH_URL=https://campuscv-app.vercel.app` only if
-callbacks misbehave behind a proxy.
+the deployment URL; set `AUTH_URL=https://campuscvai.netlify.app` or
+`NEXTAUTH_URL=https://campuscvai.netlify.app` only if callbacks misbehave behind a proxy.
 
 ## MongoDB connection note
 

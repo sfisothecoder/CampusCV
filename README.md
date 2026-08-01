@@ -19,7 +19,7 @@
      <b>CampusCV</b> is designed to make resume creation effortless. With the help of AI, users can generate, update, and customize their resumes, ensuring they stand out to potential employers. The application is secure, user-friendly, and highly customizable.
   </div>
   <br />
-  <a href="https://campuscv-app.vercel.app/"><strong>➥ Visit CampusCV App</strong></a>
+  <a href="https://campuscvai.netlify.app/"><strong>➥ Visit CampusCV App</strong></a>
 </div>
 
 ## <a name="features">✨ Features</a>
@@ -149,6 +149,13 @@ SMTP_PASS=wlmt tteh qgsf heiw
 SMTP_FROM=CampusCV <campuscvai@gmail.com>
 
 BASE_URL=localhost:3000
+
+# Netlify deployment note:
+# Netlify does not use your local .env files. Set the same variables in the
+# Netlify site dashboard under Settings → Environment.
+# Also set either AUTH_URL or NEXTAUTH_URL to your deployed URL, for example:
+# AUTH_URL=https://your-site.netlify.app
+# NEXTAUTH_URL=https://your-site.netlify.app
 ```
 
 Replace the placeholder values with your actual credentials. You can obtain these by signing up at [Google Cloud Console](https://console.cloud.google.com/) (OAuth), [MongoDB](https://mongodb.com/) and [Google AI Studio](https://aistudio.google.com/app/apikey). For email, create a dedicated mailbox and generate an [App Password](https://myaccount.google.com/apppasswords) (Gmail) or use any SMTP provider. See [docs/AUTH_SETUP.md](docs/AUTH_SETUP.md) for the full auth setup.
